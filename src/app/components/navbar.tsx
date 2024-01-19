@@ -28,7 +28,7 @@ const playfairDisplay = Playfair_Display({
 
 export default function Navbar() {
   return (
-    <nav className="fixed z-50 h-20 w-full bg-purple-100 md:h-24">
+    <nav className="fixed z-50 h-20 w-full bg-purple-200 md:h-24">
       <div className="container flex h-full items-center justify-between">
         <Link href="#">
           <h1
