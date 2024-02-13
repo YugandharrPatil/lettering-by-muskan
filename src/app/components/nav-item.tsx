@@ -16,7 +16,7 @@ export default function NavItem({
   children: string;
 }) {
   return (
-    <Button asChild variant="navLink">
+    <Button asChild variant="navLink" className="text-lg">
       <Link
         href={href}
         className={`${playfairDisplay.className} tracking-wide`}

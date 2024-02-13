@@ -13,11 +13,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import footerImg from "../../../public/removed.png";
+import footerImg from "../../../public/images/letteringbymusktan-transparent.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 md:h-40">
+    <footer className="bg-gray-200 md:h-40" id="footer">
       <div className="container h-full max-xl:p-0 md:flex md:items-center">
         <div className="mx-auto max-md:py-6 md:w-1/3">
           <Link href="#">

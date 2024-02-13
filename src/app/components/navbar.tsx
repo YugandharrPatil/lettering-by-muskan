@@ -28,20 +28,20 @@ const playfairDisplay = Playfair_Display({
 
 export default function Navbar() {
   return (
-    <nav className="fixed z-50 h-20 w-full bg-purple-200 md:h-24">
+    <nav className="bg-purplDark fixed z-50 h-20 w-full border-b-2 border-b-purple-400 md:h-24">
       <div className="container flex h-full items-center justify-between">
         <Link href="#">
           <h1
-            className={`${gwendolyn.className} text-5xl text-purple-800 md:text-6xl`}
+            className={`${gwendolyn.className} text-5xl text-purple-900 md:text-6xl`}
           >
             LBM
           </h1>
         </Link>
         <div className="flex gap-4 max-md:hidden">
-          <NavItem href="/muskan">About Me</NavItem>
+          <NavItem href="/about">About Me</NavItem>
           <NavItem href="/gallery">Gallery</NavItem>
           <NavItem href="/services">Services</NavItem>
-          <NavItem href="/contact">Contact Us</NavItem>
+          <NavItem href="/contact">Contact Me</NavItem>
         </div>
         <div className="md:hidden">
           <DropdownMenu>
@@ -56,7 +56,7 @@ export default function Navbar() {
                   className={`${playfairDisplay.className} tracking-wide text-purple-950 hover:bg-purple-200 active:bg-purple-200`}
                 >
                   <HelpCircle className="mr-2 inline h-4 w-4" />
-                  <Link href="/about">About Us</Link>
+                  <Link href="/about">About Me</Link>
                 </span>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -72,7 +72,7 @@ export default function Navbar() {
                   className={`${playfairDisplay.className} tracking-wide text-purple-950 hover:bg-purple-200 active:bg-purple-200`}
                 >
                   <Package className="mr-2 inline h-4 w-4" />
-                  <Link href="#services">Services</Link>
+                  <Link href="/services">Services</Link>
                 </span>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -80,7 +80,7 @@ export default function Navbar() {
                   className={`${playfairDisplay.className} tracking-wide text-purple-950 hover:bg-purple-200 active:bg-purple-200`}
                 >
                   <Send className="mr-2 inline h-4 w-4" />
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="/contact">Contact Me</Link>
                 </span>
               </DropdownMenuItem>
             </DropdownMenuContent>
